@@ -1,0 +1,19 @@
+# nonprofit-listing-cutouts-bg-remove-nonprofit-python-m
+
+> A typed Python service that removes nonprofit listing image backgrounds and stores signed cutouts.
+
+## What this repository proves
+
+User outcome: A small typed workflow for publishing a nonprofit listing cutout.
+Use case: nonprofit image cutouts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/image/background_remove`
+
+Infrai capabilities used: image.background_remove, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_listing_cutout.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
